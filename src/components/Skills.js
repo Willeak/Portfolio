@@ -93,7 +93,7 @@ const Skills = () => {
       </section>
       <section className="jc__center cv reveal">
         <article className="paragraphe">
-          J'ai acquéri et validé mes compétences grâce à la formation de
+          J'aie acquis et validé mes compétences grâce à la formation de
           Développeur Web avec Openclassrooms première plateforme européenne de
           formation en ligne. Après cela, je ne cesse d'acquérir de nouvelles en
           autodidacte !
