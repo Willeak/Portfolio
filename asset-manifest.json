@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.3f88d097.css",
+    "main.js": "/Portfolio/static/js/main.fc8d0577.js",
+    "static/media/CV_DUCATEZ_Calvin_DevWeb.pdf": "/Portfolio/static/media/CV_DUCATEZ_Calvin_DevWeb.e74affc8be44efeecfe1.pdf",
+    "static/media/panthere.webp": "/Portfolio/static/media/panthere.9c14e0c1749ae5e4119d.webp",
+    "static/media/Kanap.webp": "/Portfolio/static/media/Kanap.36505ca811217d0cce64.webp",
+    "static/media/ohmyfood.webp": "/Portfolio/static/media/ohmyfood.f7f9ff7e945733718c18.webp",
+    "static/media/WeAlert.webp": "/Portfolio/static/media/WeAlert.71f5853c84bb0b7ca5c5.webp",
+    "static/media/Groupomania.webp": "/Portfolio/static/media/Groupomania.15b9203253dd83d50f93.webp",
+    "static/media/Piiquante.webp": "/Portfolio/static/media/Piiquante.8acc795c76c231f6bce1.webp",
+    "static/media/Panchang-Medium.otf": "/Portfolio/static/media/Panchang-Medium.cd8f7d5f37f1d596ba30.otf",
+    "static/media/Booki.webp": "/Portfolio/static/media/Booki.41c9dda1353570184f56.webp",
+    "static/media/FontsFree-Net-Lastica.ttf": "/Portfolio/static/media/FontsFree-Net-Lastica.a211c6b3cf7f2af877b9.ttf",
+    "static/media/LeagueSpartanBold.otf": "/Portfolio/static/media/LeagueSpartanBold.caadcad8af387d419251.otf",
+    "static/media/github.png": "/Portfolio/static/media/github.d5274b220d5aa034c351.png",
+    "static/media/LinkedIn.webp": "/Portfolio/static/media/LinkedIn.ee540356ac4b54fe2f0c.webp",
+    "static/media/BotDiscord.webp": "/Portfolio/static/media/BotDiscord.eafeb850c04cfaa3cf15.webp",
+    "index.html": "/Portfolio/index.html",
+    "main.3f88d097.css.map": "/Portfolio/static/css/main.3f88d097.css.map",
+    "main.fc8d0577.js.map": "/Portfolio/static/js/main.fc8d0577.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f88d097.css",
+    "static/js/main.fc8d0577.js"
+  ]
+}
