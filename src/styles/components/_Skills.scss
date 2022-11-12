@@ -1,0 +1,159 @@
+#Skills {
+  margin-left: 7%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    margin-left: 10px;
+  }
+}
+
+.bar {
+  width: 100%;
+  max-width: 600px;
+  height: 16px;
+  background-color: rgb(105, 105, 105);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.bar2 {
+  position: relative;
+  height: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active1 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.skillList {
+  width: 36%;
+  h2 {
+    width: 360px;
+    word-wrap: break-word;
+  }
+}
+
+.iconeSEO {
+  width: 80px;
+}
+
+.cv {
+  width: 45%;
+}
+
+.seoList {
+  padding-left: 0;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+      margin: 20px 0px 0px 0px;
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.seoList {
+  div {
+    li:hover img {
+      transform: scale(1.1);
+      transition: 1s;
+    }
+  }
+}
+
+.textCenter {
+  padding-top: 30px;
+  text-align: center;
+}
+
+// tablet version
+@media screen and (max-width: 1090px) {
+  #Skills {
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      text-align: left;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .skillList {
+    width: 90%;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .cv {
+    text-align: center;
+    width: 100%;
+  }
+}
+// mobile version
+@media screen and (max-width: 668px) {
+  #Skills {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    p {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .skillList {
+    width: 70%;
+    h2 {
+      width: auto;
+      word-wrap: break-word;
+    }
+  }
+
+  .seoList {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0px 10px 0px;
+    }
+  }
+
+  .seoList {
+    margin-left: -40px;
+    li {
+      p {
+        width: auto;
+      }
+    }
+  }
+}

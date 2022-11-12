@@ -1,0 +1,254 @@
+.Me2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  section {
+    width: 40%;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      padding-top: 0;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      svg {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.Moi {
+  width: 100%;
+  margin-right: 7%;
+}
+
+.cardQualification {
+  border: 2px solid grey;
+  border-radius: 15px;
+  min-width: 300px;
+  width: 400px !important;
+  height: 400px;
+  max-width: 400px;
+  margin-right: 15%;
+  padding: 0px 15px 0px 15px;
+  overflow: hidden;
+  svg {
+    margin-top: 20px;
+    font-size: 60px;
+    margin: 50px 0px 50px 0px;
+  }
+  h2 {
+    padding-top: 0;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  h3 {
+    color: rgb(165, 165, 165);
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 12px;
+  }
+  p {
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.cardQualification:hover svg {
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+@keyframes hover-shadow {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+}
+@keyframes hover {
+  50% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hover-shadow {
+  0% {
+    transform: translateY(10px);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 0.4;
+  }
+}
+
+// Default options
+$defaultDuration: 0.3s;
+$primaryColour: #ececec;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, 0.6);
+
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor() {
+  //Prevent highlight colour when element is tapped
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@mixin hardwareAccel() {
+  //Improve performance on mobile/tablet devices
+  transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+  //Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hover-shadow {
+  display: inline-block;
+  position: relative;
+  transition-duration: $defaultDuration;
+  transition-property: transform;
+
+  @include hideTapHighlightColor();
+  @include hardwareAccel();
+  @include improveAntiAlias();
+
+  &:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0) 80%
+    ); /* W3C */
+    transition-duration: $defaultDuration;
+    transition-property: transform opacity;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-delay: $defaultDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    &:before {
+      opacity: 0.4;
+      transform: translateY(6px);
+      animation-name: hover-shadow;
+      animation-duration: 1.5s;
+      animation-delay: 0.3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
+.reflect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.reflect::after {
+  content: "";
+  position: absolute;
+  top: -300%;
+  right: 1500%;
+  width: 10%;
+  height: 1000%;
+  opacity: 0;
+  transform: rotate(20deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  // animation: shine 2s 1s;
+  // animation: shine 1s linear;
+  animation: shine 4s linear infinite;
+  animation-delay: 50s;
+}
+
+@keyframes shine {
+  1% {
+    opacity: 1;
+    right: 1500%;
+  }
+
+  100% {
+    opacity: 1;
+    right: -200%;
+  }
+}
+
+// tablet version
+@media screen and (max-width: 1090px) {
+  .Me2 {
+    flex-direction: column;
+    align-items: center;
+    section {
+      width: 90%;
+      margin-left: 50px;
+
+      button {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .cardQualification {
+    margin-right: 0;
+    width: 300px !important;
+  }
+}
+// mobile version
+@media screen and (max-width: 668px) {
+  .cardQualification {
+    h2 {
+      text-align: center;
+    }
+  }
+}

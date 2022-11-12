@@ -1,0 +1,204 @@
+:root {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(255, 166, 0);
+  --thirdy-color: #141414;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Panchang;
+  background-color: var(--thirdy-color);
+  color: var(--primary-color);
+  // background-image: url("./../assets/banner.png");
+  // background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: none; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.336); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  scroll-margin-right: 5px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 900;
+  background-color: #141414;
+  box-shadow: 0px 5px 15px 23px #141414;
+
+  nav {
+    position: fixed;
+    right: 0;
+    margin-top: 20px;
+    z-index: 1000;
+  }
+}
+
+section {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  padding-top: 80px;
+}
+
+.jc__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("./../fonts/LeagueSpartanBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontsFreeNetLastica";
+  src: url("./../fonts/FontsFree-Net-Lastica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Panchang";
+  src: url("./../fonts/Panchang/Panchang-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.LeagueSpartan {
+  font-family: "LeagueSpartan";
+}
+
+.Lastica {
+  font-family: "FontsFreeNetLastica";
+}
+
+.Panchang {
+  font-family: "Panchang";
+}
+
+a:visited,
+a:hover,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+nav a {
+  margin: 0px 10px 0px 10px;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+#Me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // height: 720px;
+  padding-bottom: 200px;
+}
+
+#Skills {
+  // height: 800px;
+  padding-bottom: 150px;
+}
+
+#Contact {
+  height: 800px;
+}
+
+button {
+  color: white;
+  background-color: rgba(59, 59, 59, 0);
+  border-radius: 25px;
+  border: 2px solid rgb(59, 59, 59);
+  width: auto;
+  height: 50px;
+  padding: 0px 20px 0px 20px;
+  font-family: Panchang;
+}
+
+button:hover {
+  animation: 1s scaled forwards;
+}
+
+@keyframes scaled {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.paragraphe {
+  padding-top: 160px;
+  text-align: center;
+}
+
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none !important;
+}
+
+// tablet version
+@media screen and (max-width: 1090px) {
+  .paragraphe {
+    padding-top: 100px;
+    width: 80%;
+  }
+}
+// mobile version
+@media screen and (max-width: 668px) {
+  #Skills {
+    padding-bottom: 0px;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 900;
+    background-color: #141414;
+    box-shadow: 0px 5px 15px 23px #141414;
+
+    nav {
+      position: fixed;
+      right: 0;
+      margin-top: 20px;
+      z-index: 1000;
+    }
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex;
+  }
+}

@@ -1,0 +1,68 @@
+.link {
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Me:hover,
+.Skills:hover,
+.Projects:hover,
+.Contact:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: inset 250px 0 0 0 #ffffff;
+}
+
+.marquee-w {
+  position: relative;
+  display: block;
+  width: 340px;
+  height: 25px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  min-width: 100%;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  animation: marquee 6s linear infinite;
+}
+.marquee2 span {
+  animation-delay: 3s;
+}
+
+.marquee3 span {
+  animation-delay: 3s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-150%, 0);
+  }
+}
+
+.replace {
+  display: none;
+}
+
+// tablet version
+@media screen and (max-width: 1090px) {
+  .replace {
+    display: flex;
+  }
+}
+// mobile version
+@media screen and (max-width: 668px) {
+}
