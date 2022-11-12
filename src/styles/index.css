@@ -1328,7 +1328,10 @@ html {
   .email {
     margin-top: 200px;
   }
-  .email p {
+  .email a {
+    margin-right: 310px;
+  }
+  .email a p {
     font-size: calc(17px + 4 * ((100vw - 320px) / 680));
   }
   .text1 {

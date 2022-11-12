@@ -45,8 +45,11 @@
 @media screen and (max-width: 668px) {
   .email {
     margin-top: 200px;
-    p {
-      font-size: calc(17px + 4 * ((100vw - 320px) / 680));
+    a {
+      margin-right: 310px;
+      p {
+        font-size: calc(17px + 4 * ((100vw - 320px) / 680));
+      }
     }
   }
   .text1 {
