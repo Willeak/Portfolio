@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c52ff308.css",
-    "main.js": "/Portfolio/static/js/main.bae4cd90.js",
-    "static/media/CV_DUCATEZ_Calvin_DevWeb.pdf": "/Portfolio/static/media/CV_DUCATEZ_Calvin_DevWeb.d1a24f9ad6be7c392cbc.pdf",
+    "main.css": "/Portfolio/static/css/main.65889227.css",
+    "main.js": "/Portfolio/static/js/main.5fa3b5ee.js",
+    "static/media/CV_DUCATEZ_Calvin_DevWeb.pdf": "/Portfolio/static/media/CV_DUCATEZ_Calvin_DevWeb.b0e3382abd07be537026.pdf",
     "static/media/panthere.webp": "/Portfolio/static/media/panthere.9c14e0c1749ae5e4119d.webp",
     "static/media/Kanap.webp": "/Portfolio/static/media/Kanap.36505ca811217d0cce64.webp",
     "static/media/ohmyfood.webp": "/Portfolio/static/media/ohmyfood.f7f9ff7e945733718c18.webp",
@@ -17,11 +17,11 @@
     "static/media/LinkedIn.webp": "/Portfolio/static/media/LinkedIn.ee540356ac4b54fe2f0c.webp",
     "static/media/BotDiscord.webp": "/Portfolio/static/media/BotDiscord.eafeb850c04cfaa3cf15.webp",
     "index.html": "/Portfolio/index.html",
-    "main.c52ff308.css.map": "/Portfolio/static/css/main.c52ff308.css.map",
-    "main.bae4cd90.js.map": "/Portfolio/static/js/main.bae4cd90.js.map"
+    "main.65889227.css.map": "/Portfolio/static/css/main.65889227.css.map",
+    "main.5fa3b5ee.js.map": "/Portfolio/static/js/main.5fa3b5ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.c52ff308.css",
-    "static/js/main.bae4cd90.js"
+    "static/css/main.65889227.css",
+    "static/js/main.5fa3b5ee.js"
   ]
 }
