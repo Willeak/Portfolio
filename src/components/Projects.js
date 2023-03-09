@@ -172,35 +172,6 @@ const Projects = () => {
             </div>
           </article>
         </div>
-        <h3>Autres projets :</h3>
-        <section className="projects">
-          <article className="Card">
-            <img src={projet7} alt="Projet 1" className="ImgCard"></img>
-            <div className="description">
-              <h4>WeAlert</h4>{" "}
-              <div>
-                <ExternalLink href="" target="_blank">
-                  <img
-                    src={github}
-                    alt="logo github"
-                    className="icon LinkGit"
-                  ></img>
-                </ExternalLink>
-              </div>
-              <p>
-                Réalisation d'une extension chrome, basé sur l'API de twitch.tv
-                afin d'obtenir des informations sur une diffusion en direct.
-              </p>
-            </div>
-          </article>
-          <article className="Card">
-            <img src={projet8} alt="Projet 1" className="ImgCard"></img>
-            <div className="description">
-              <h4>Bot Discord</h4>
-              <p>En cours de développement...</p>
-            </div>
-          </article>
-        </section>
       </section>
     </section>
   );

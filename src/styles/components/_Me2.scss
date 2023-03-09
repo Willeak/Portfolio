@@ -240,14 +240,14 @@ $shadowColour: rgba(0, 0, 0, 0.6);
     }
   }
   .cardQualification {
+    margin-left: 18px !important;
     margin-right: 0;
     width: 300px !important;
-  }
-}
-// mobile version
-@media screen and (max-width: 668px) {
-  .cardQualification {
+    height: 440px;
     h2 {
+      text-align: center;
+    }
+    h3 {
       text-align: center;
     }
   }

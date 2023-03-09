@@ -44,19 +44,11 @@ const Skills = () => {
           </div>
           <p>JAVASCRIPT</p>
           <div className="bar">
-            <div
-              id="JAVASCRIPT"
-              className="bar2"
-              style={{ width: "68%" }}
-            ></div>
+            <div className="bar2" style={{ width: "68%" }}></div>
           </div>
           <p>REACT JS </p>
           <div className="bar">
-            <div
-              id="JAVASCRIPT"
-              className="bar2"
-              style={{ width: "63%" }}
-            ></div>
+            <div className="bar2" style={{ width: "63%" }}></div>
           </div>
         </section>
         <section>
@@ -64,7 +56,7 @@ const Skills = () => {
 
           <p>NODE.JS + EXPRESS </p>
           <div className="bar">
-            <div id="NODE" className="bar2" style={{ width: "67%" }}></div>
+            <div className="bar2" style={{ width: "67%" }}></div>
           </div>
         </section>
         <section>
@@ -72,31 +64,35 @@ const Skills = () => {
 
           <p>MongoDB</p>
           <div className="bar">
-            <div id="NODE" className="bar2" style={{ width: "70%" }}></div>
+            <div className="bar2" style={{ width: "70%" }}></div>
           </div>
         </section>
         <section>
           <h3>Divers</h3>
           <p>Windows</p>
           <div className="bar">
-            <div id="NODE" className="bar2" style={{ width: "90%" }}></div>
+            <div className="bar2" style={{ width: "90%" }}></div>
           </div>
           <p>Ubuntu / Debian</p>
           <div className="bar">
-            <div id="NODE" className="bar2" style={{ width: "70%" }}></div>
+            <div className="bar2" style={{ width: "70%" }}></div>
           </div>
           <p>Adobe Première Pro</p>
           <div className="bar">
-            <div id="NODE" className="bar2" style={{ width: "65%" }}></div>
+            <div className="bar2" style={{ width: "65%" }}></div>
           </div>
         </section>
       </section>
       <section className="jc__center cv reveal">
         <article className="paragraphe">
           J'aie acquis et validé mes compétences grâce à la formation de
-          Développeur Web avec Openclassrooms première plateforme européenne de
-          formation en ligne. Après cela, je ne cesse d'acquérir de nouvelles en
-          autodidacte !
+          Développeur Web avec Openclassrooms
+          <span class="orange">
+            {" "}
+            première plateforme européenne de formation en ligne.{" "}
+          </span>
+          Après cela, je ne cesse d'acquérir de nouvelles connaissances en
+          auhrefdidacte !
         </article>
         <article>
           <h2 className="textCenter">

@@ -14,15 +14,16 @@ const Me2 = () => {
     <section className="Me2">
       <section>
         <h2>Qui suis-je ?</h2>
-        <p className="Moi">
+        <p class="Moi">
           je suis Calvin Ducatez, 25 ans, Développeur web passionné dans la
           région du Pas-de-Calais à Béthune. J'ai réalisé une formation de
           "Développeur intégrateur Web" de niveau Bac +2 avec Openclassrooms en
           autodidacte de mars 2022 à novembre 2022. <br />
-          Ayant terminé et validé tout mes projets, je cherche un poste pour
-          exercer en tant que Développeur Web ! <br />
+          Ayant terminé et obtenue mon diplôme, je cherche activement un poste
+          pour exercer en tant que Développeur Web !<br />
           <br />
-          vous pouver consulter mes compétences et mes projets ci-dessous.
+          vous pouver consulter mes compétences et mes projets ci-dessous, sinon
+          téléchargez mon CV !
         </p>
         <button onClick={downloadTxtFile}>
           <FontAwesomeIcon icon={faDownload} />
@@ -33,8 +34,12 @@ const Me2 = () => {
         <div id="ani" className="reflect"></div>
         <FontAwesomeIcon icon={faGraduationCap} />
         <h2>Développeur intégrateur Web</h2>
-        <h3>Diplôme de niveau 5 (bac +2)</h3>
-        <p>En cours de validation à partir du 2 novembre.</p>
+        <h3>Diplôme de niveau 5 (bac +2) obtenue</h3>
+        <p>
+          Certification professionnelle enregistrée au Répertoire National des
+          Certifications Professionnelles au
+          <span class="orange">niveau 5</span>.
+        </p>
       </section>
     </section>
   );
