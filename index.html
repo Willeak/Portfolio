@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="porfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
+            integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" 
+            crossorigin="anonymous"> -->
+    <script
+      src="https://kit.fontawesome.com/d7ad15fc66.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" type="text/CSS" href="css/style.css" />
+
+    <link rel="stylesheet" type="text/CSS" href="css/flexbox.css" />
+    <title>DUCATEZ Calvin - Dev Web</title>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- header -->
+    <header>
+      <nav class="link">
+        <a href="#Me" class="Me link">
+          <span>A propos</span>
+        </a>
+        <a href="#Skills" class="Skills link">
+          <span>Mes compétences</span>
+        </a>
+        <br class="replace" />
+        <a href="#Projects" class="Projects link">
+          <span>Mon portfolio</span>
+        </a>
+        <a href="#Contact" class="Contact link">
+          <span>Me contacter</span>
+        </a>
+      </nav>
+    </header>
+    <!-- me -->
+
+    <section id="Me" class="display-flex flex-column align-space-between">
+      <article id="Me2" class="display-flex flex-column align-space-between">
+        <div id="Me3" class="display-flex flex-row align-space-around">
+          <div id="text">
+            <p class="hi">Bonjour,</p>
+            <p class="name">je suis DUCATEZ Calvin</p>
+            <div class="messagedefilant">
+              <div data-text="Developpeur Web">
+                <span>Developpeur Web</span>
+              </div>
+            </div>
+
+            <p class="descME">
+              Passionné par l'informatique et les nouvelles technologies, j'ai
+              réalisé une formation de "Développeur intégrateur Web" avec
+              <span class="blue"> React.js</span>
+              <br />
+              <br />
+              Venez consulter
+              <a href="#Projects" class="orange"> Mon portfolio </a>
+              et découvrir mon profil !
+            </p>
+            <div class="circleMe"></div>
+          </div>
+          <div id="Model" class="display-flex align-center align-middle">
+            <img
+              src="img/page.webp"
+              alt="maquette d'un site web"
+              class="tilt"
+            />
+            <img
+              src="img/desc.webp"
+              alt="calque de la description de la maquette"
+              id="image-container"
+            />
+          </div>
+        </div>
+        <div class="decor">
+          <div class="stick"></div>
+          <div class="circle"></div>
+          <div class="circle2"></div>
+          <div class="circle"></div>
+          <div class="stick"></div>
+        </div>
+        <div
+          id="arrow"
+          class="display-flex flex-column align-space-around align-middle"
+        >
+          <p>↑</p>
+          <p>↓</p>
+        </div>
+      </article>
+      <article class="Me2">
+        <section class="display-flex flex-column align-middle">
+          <h2>Qui suis-je ?</h2>
+          <p class="Moi">
+            Développeur web passionné dans la région du Pas-de-Calais à Béthune.
+            J'ai réalisé une formation de "Développeur intégrateur Web" en
+            autodidacte.<br />
+            Ayant terminé et obtenue mon diplôme, je souhaite poursuivre dans ce
+            domaine et évoluer vers Développeur Full Stack.<br /><br />
+            <span class="LightOrange">
+              Je recherche activement un contrat de professionnalisation pour
+              une alternance avec 3W ACADEMY qui à débuté le 18 septembre
+              2023<br />
+              <br />
+              Contrat d’apprentissage - Rythme : 3 semaines en entreprise / 1
+              semaine en école <br />Formation éligible à l’Aide Exceptionnelle
+              de 6000€<br /><br
+            /></span>
+            vous pouver consulter mes compétences et mes projets ci-dessous,
+            sinon téléchargez mon CV !
+          </p>
+          <button id="telechargerCv" onclick="telechargerCv()">
+            <i class="fa-solid fa-download IconeForm"></i>
+            Télécharger mon CV
+          </button>
+        </section>
+        <section class="cardQualification hover-shadow">
+          <div id="ani" class="reflect"></div>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h2>Développeur intégrateur Web</h2>
+          <h3>Diplôme obtenue</h3>
+          <p>
+            Certification professionnelle enregistrée au Répertoire National des
+            Certifications Professionnelles au<br />
+            <span class="orange">niveau 5</span>
+          </p>
+        </section>
+      </article>
+    </section>
+    <!-- Skills -->
+    <section id="Skills" class="display-flex align-space-between">
+      <section class="reveal skillList">
+        <h2><i class="fa-solid fa-book-bookmark"></i> Mes compétences</h2>
+        <section>
+          <h3>Frontend</h3>
+
+          <p>HTML5</p>
+          <div class="bar display-flex align-space-between">
+            <div id="HTML" class="bar2" style="width: 95%"></div>
+          </div>
+          <p>CSS3 and SASS</p>
+          <div class="bar display-flex align-space-between">
+            <div id="CSS3" class="bar2" style="width: 85%"></div>
+          </div>
+          <p>JAVASCRIPT</p>
+          <div class="bar display-flex align-space-between">
+            <div class="bar2" style="width: 68%"></div>
+          </div>
+          <p>REACT JS</p>
+          <div class="bar display-flex align-space-between">
+            <div class="bar2" style="width: 63%"></div>
+          </div>
+        </section>
+        <section>
+          <h3>Backend</h3>
+
+          <p>NODE.JS + EXPRESS</p>
+          <div class="bar">
+            <div class="bar2" style="width: 67%"></div>
+          </div>
+        </section>
+        <section>
+          <h3>Base de donnée</h3>
+
+          <p>MongoDB</p>
+          <div class="bar">
+            <div class="bar2" style="width: 70%"></div>
+          </div>
+        </section>
+        <section>
+          <h3>Divers</h3>
+          <p>Windows</p>
+          <div class="bar">
+            <div class="bar2" style="width: 90%"></div>
+          </div>
+          <p>Ubuntu / Debian</p>
+          <div class="bar">
+            <div class="bar2" style="width: 70%"></div>
+          </div>
+          <p>Adobe Première Pro</p>
+          <div class="bar">
+            <div class="bar2" style="width: 65%"></div>
+          </div>
+        </section>
+      </section>
+      <section class="display-flex flex-column align-middle cv reveal">
+        <article class="paragraphe">
+          J'aie acquis et validé mes compétences grâce à la formation de
+          Développeur Web avec Openclassrooms
+          <span class="orange"
+            >première plateforme européenne de formation en ligne.</span
+          >
+          Après cela, je ne cesse d'acquérir de nouvelles connaissances en
+          auhrefdidacte !
+        </article>
+        <article>
+          <h2 class="textCenter">
+            SEO : <br class="replace" />
+            <span class="orange">S</span>earch
+            <span class="orange">E</span>ngine
+            <span class="orange">O</span>ptimisation
+          </h2>
+
+          <div class="seoList">
+            <ul class="display-flex align-middle flex-column">
+              <li class="display-flex flex-row align-middle">
+                <img
+                  src="./assets/1.webp"
+                  alt="icone d'ordinateur"
+                  class="iconeSEO"
+                  width="80"
+                  height="80"
+                />
+                <p>Recherche des bonnes pratiques en développement web</p>
+              </li>
+
+              <li class="display-flex flex-row align-middle">
+                <img
+                  src="./assets/2.webp"
+                  alt="icone de compteur de vitesse"
+                  class="iconeSEO"
+                  width="80"
+                  height="80"
+                />
+                <p>Optimiser la taille et la vitesse d’un site web</p>
+              </li>
+
+              <li class="display-flex flex-row align-middle">
+                <img
+                  src="./assets/3.webp"
+                  alt="icone d'un graphique haussier"
+                  class="iconeSEO"
+                  width="80"
+                  height="80"
+                />
+                <p>Optimiser le référencement d'un site web</p>
+              </li>
+
+              <li class="display-flex flex-row align-middle">
+                <img
+                  src="./assets/4.webp"
+                  alt="icone d'un oeil et de son"
+                  class="iconeSEO"
+                  width="80"
+                  height="80"
+                />
+                <p>Assurer l'accessibilité d'un site web</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!-- portfolio -->
+    <section id="Projects">
+      <section class="reveal">
+        <h2><i class="fa-solid fa-diagram-project"></i> Mon portfolio</h2>
+        <div
+          class="projects display-flex flex-row align-center align-middle flex-wrap"
+        >
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/Booki.webp"
+              alt="Projet d'un site web de reservation en ligne"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Booki</h4>
+              <div class="display-flex align-space-around">
+                <a href="https://willeak.github.io/" target="_blank">
+                  <i class="fa-solid fa-link icon LinkGit"></i>
+                </a>
+                <a
+                  href="https://github.com/Willeak/Willeak.github.io"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Réalisation d'un site de réservation en ligne avec conformité de
+                la maquette et responsive deskhrefp, tablet, mobile.
+              </p>
+            </div>
+          </article>
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/ohmyfood.webp"
+              alt="Projet d'un site web de restauration en ligne"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Ohmyfood</h4>
+              <div class="display-flex align-space-around">
+                <a href="https://willeak.github.io/ohmyfood/" target="_blank">
+                  <i class="fa-solid fa-link icon LinkGit"></i>
+                </a>
+                <a href="https://github.com/Willeak/ohmyfood" target="_blank">
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Réalisation d'un site de restaurations avec conformité de la
+                maquette et effets CSS graphiques avancés SASS.
+              </p>
+            </div>
+          </article>
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/panthere.webp"
+              alt="Projet d'optimisation d'un site web"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Panthère</h4>
+              <div class="display-flex align-space-around">
+                <a
+                  href="https://willeak.github.io/La_Panthere/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-link icon LinkGit"></i>
+                </a>
+                <a
+                  href="https://github.com/Willeak/La_Panthere"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Optimiser un site web existant grâce au SEO (Search Engine
+                Optimization), référence et accessibilité.
+              </p>
+            </div>
+          </article>
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/Kanap.webp"
+              alt="Projet d'un site web de boutique de canapé"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Kanap</h4>
+              <div class="display-flex align-space-around">
+                <a href="https://github.com/Willeak/Kanap" target="_blank">
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Réalisation du Frontend du site de vente de canapé avec un plan
+                de test, sous le language javascript, ainsi que données issues
+                de sources externes.
+              </p>
+            </div>
+          </article>
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/Piiquante.webp"
+              alt="Projet d'un site web de boutique de sauce piquante"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Piiquante</h4>
+              <div class="display-flex align-space-around">
+                <a href="https://github.com/Willeak/Piiquante" target="_blank">
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Réalisayion du Backend du site de références de saute piquantes
+                avec shrefckage de données sécurisé.
+              </p>
+            </div>
+          </article>
+          <article class="Card display-flex flex-column">
+            <img
+              src="./assets/github/Groupomania.webp"
+              alt="Projet d'une application web de reseau social d'entreprise"
+              class="ImgCard"
+              width="280"
+              height="366"
+            />
+            <div class="description">
+              <h4>Groupomania</h4>
+              <div class="display-flex align-space-around">
+                <a
+                  href="https://github.com/Willeak/Groupomania"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/github.webp"
+                    alt="logo github"
+                    class="icon LinkGit"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+              </div>
+              <p>
+                Création complète d'une application web de réseau social
+                d'entreprise (comprenant le Frontend, Backend et BDD MongoDB),
+                avec système d'authentification sécurisé, envoie de données et
+                de fichiers.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+    <!-- Contact -->
+    <section id="Contact">
+      <h2>Me contacter</h2>
+      <p>Vous souhaitez discuter avec moi sur de futur projet ?</p>
+      <p class="text1">
+        Si vous êtes à la recherche d'un développeur web talentueux et passionné
+        pour réaliser votre projet, ne cherchez plus ! Je suis à votre
+        disposition pour discuter de vos besoins en développement web et pour
+        vous offrir des solutions personnalisées, adaptées à vos objectifs et à
+        votre budget.
+        <br /><br />
+        Avec mes compétences en programmation, mon expérience et mon engagement
+        à fournir un travail de qualité, je suis convaincu que je peux vous
+        aider à créer une présence en ligne efficace et réussie. Contactez-moi
+        dès maintenant pour en discuter davantage !
+      </p>
+      <div class="email hoverLink display-flex flex-row-reverse">
+        <a href="mailto:cducatez.pro@gmail.com" target="_blank">
+          <div class="circleContact"></div>
+          <p class="cool-link">cducatez.pro@gmail.com</p>
+        </a>
+      </div>
+    </section>
+    <!-- <form id="submit">
+      <label for="Name">Nom :</label>
+      <input type="text" id="Name" name="Name" required /><br /><br />
+
+      <label for="firstName">Prénom :</label>
+      <input type="text" id="firstName" name="firstName" required /><br /><br />
+
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="Number">Numéro de téléphone :</label>
+      <input type="Number" id="Number" name="Number" required /><br /><br />
+
+      <label for="object">Objet :</label>
+      <input type="text" id="object" name="object" required /><br /><br />
+
+      <label for="Message">Message :</label><br />
+      <textarea
+        id="Message"
+        name="Message"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+    </form>
+    <button type="submit">Envoyer</button> -->
+    <!-- footer -->
+    <footer class="display-flex align-middle flex-column align-middle">
+      <nav class="display-flex flex-row align-space-around">
+        <a
+          href="https://www.linkedin.com/in/calvin-ducatez/"
+          target="_blank"
+          class="hoverLink display-flex flex-row align-center align-middle"
+        >
+          <img
+            src="./assets/LinkedIn.webp"
+            alt="logo Linkedin"
+            class="icon"
+            width="40"
+            height="40"
+          />
+          <h4 class="cool-link">Linkedin</h4>
+        </a>
+
+        <a
+          href="https://github.com/Willeak"
+          target="_blank"
+          class="hoverLink display-flex flex-row align-center align-middle"
+        >
+          <img
+            src="./assets/github.webp"
+            alt="logo github"
+            class="icon"
+            width="40"
+            height="40"
+          />
+          <h4 class="cool-link">Github</h4>
+        </a>
+
+        <a href="#Me" class="hoverLink">
+          <i class="fa-solid fa-arrow-up arrowup icon"></i>
+          <h4 class="display-flex cool-link">Vers le haut</h4>
+        </a>
+      </nav>
+      <p>© DUCATEZ Calvin 2023. Tous droits réservés.</p>
+    </footer>
+    <link rel="stylesheet" type="text/CSS" href="css/animations.css" />
+    <script src="./js/index.js"></script>
+  </body>
+</html>

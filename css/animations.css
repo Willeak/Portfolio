@@ -1,0 +1,330 @@
+/* ====== animation button ====== */
+button {
+  color: white;
+  background-color: rgba(59, 59, 59, 0);
+  border-radius: 25px;
+  border: 2px solid #3b3b3b;
+  width: auto;
+  height: 50px;
+  padding: 0px 20px 0px 20px;
+  font-family: Panchang;
+}
+
+button:hover {
+  animation: 1s scaled forwards;
+}
+
+@keyframes scaled {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* ====== texte defilant ====== */
+.messagedefilant {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  height: 25px;
+  font-family: "FontsFreeNetLastica";
+  font-size: 20px;
+}
+.messagedefilant div {
+  position: absolute;
+  min-width: 100%;
+}
+.messagedefilant div span,
+.messagedefilant div:after {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  top: 0;
+}
+.messagedefilant div span {
+  animation: defilement 5s infinite linear;
+  padding-right: 25px;
+  font-size: 20px;
+}
+.messagedefilant div:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  animation: defilement2 5s infinite linear;
+}
+
+@keyframes defilement {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes defilement2 {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+/* ====== cursor ====== */
+#cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#cursor-border {
+  --size: 50px;
+  position: fixed;
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px white;
+  pointer-events: none;
+  transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out, height 0.15s ease-out, background-color 0.15s ease-out;
+  z-index: 999;
+}
+
+/* ====== arrow ====== */
+#arrow {
+  margin-left: 43%;
+  margin-right: 50%;
+  width: 40px;
+  height: 80px;
+  border: 2px solid #3b3b3b;
+  border-radius: 50px;
+  color: #3b3b3b;
+  font-weight: 800;
+  animation: moove 2s linear infinite;
+}
+
+@keyframes moove {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* ====== background circle ====== */
+.circle {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.circle2 {
+  border: 2px solid white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.circleMe {
+  position: absolute;
+  width: 250px !important;
+  height: 250px !important;
+  margin-top: -180px;
+  margin-left: 3%;
+  border-top: 3px solid var(--secondary-color);
+  border-left: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  animation: 2.8s rotate forwards;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(290deg);
+  }
+}
+/* ====== card qualif ====== */
+.cardQualification {
+  margin-top: 60px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  min-width: 300px;
+  width: 400px !important;
+  height: 400px;
+  max-width: 400px;
+  margin-right: 15%;
+  padding: 0px 15px 0px 15px;
+  overflow: hidden;
+}
+.cardQualification i {
+  margin-top: 20px;
+  font-size: 60px;
+  margin: 50px 0px 50px 0px;
+}
+.cardQualification h2 {
+  padding-top: 0;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.cardQualification h3 {
+  color: #a5a5a5;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 12px;
+}
+.cardQualification p {
+  margin-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.cardQualification:hover i {
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1090px) {
+  .cardQualification {
+    margin-right: 0%;
+    width: 300px !important;
+    height: 450px;
+  }
+}
+@keyframes hover-shadow {
+  0% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(6px);
+    opacity: 0.4;
+  }
+}
+@keyframes hover {
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes hover-shadow {
+  0% {
+    transform: translateY(10px);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0.4;
+  }
+}
+.hover-shadow {
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hover-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-6px);
+  animation-name: hover;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hover-shadow:hover:before {
+  opacity: 0.4;
+  transform: translateY(6px);
+  animation-name: hover-shadow;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.reflect {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.reflect::after {
+  content: "";
+  position: absolute;
+  top: -300%;
+  right: 1500%;
+  width: 10%;
+  height: 1000%;
+  opacity: 0;
+  transform: rotate(20deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+  animation: shine 4s linear infinite;
+  animation-delay: 50s;
+}
+
+@keyframes shine {
+  1% {
+    opacity: 1;
+    right: 1500%;
+  }
+  100% {
+    opacity: 1;
+    right: -200%;
+  }
+}/*# sourceMappingURL=animations.css.map */
