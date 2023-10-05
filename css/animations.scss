@@ -113,7 +113,6 @@ button:hover {
   border: 2px solid #3b3b3b;
   border-radius: 50px;
   color: #3b3b3b;
-  font-weight: 800;
   animation: moove 2s linear infinite;
 }
 
@@ -347,4 +346,59 @@ button:hover {
     opacity: 1;
     right: -200%;
   }
+}
+
+.codedText {
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  overflow: hidden;
+  opacity: 0;
+}
+
+.circleSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  font-size: 10px;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: 500;
+  transition: 1s;
+  z-index: 50;
+  position: relative;
+  border: 2px var(--secondary-color) solid;
+  .IconSkills {
+    color: var(--thirdy-color);
+    font-size: 60px;
+    height: 60px;
+  }
+}
+
+//effect glowing
+.circleSkills:hover {
+  transform: scale(1.1);
+}
+
+.circleSkills::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 15px 3px 40px 1px rgba(255, 255, 255, 0.308);
+  transition: transform 0.8s, opacity 0.8s;
+  transform: rotate(0deg);
+  opacity: 0;
+}
+
+.circleSkills:hover::before {
+  transform: rotate(200deg);
+  opacity: 1;
 }

@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/CSS" href="css/style.css" />
 
     <link rel="stylesheet" type="text/CSS" href="css/flexbox.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+
     <title>DUCATEZ Calvin - Dev Web</title>
   </head>
   <body>
@@ -23,8 +25,8 @@
     <div id="cursor-border"></div>
     <!-- header -->
     <header>
-      <nav class="link">
-        <a href="#Me" class="Me link">
+      <nav class="navigation link">
+        <a href="#Me" class="Me link active">
           <span>A propos</span>
         </a>
         <a href="#Skills" class="Skills link">
@@ -43,10 +45,10 @@
 
     <section id="Me" class="display-flex flex-column align-space-between">
       <article id="Me2" class="display-flex flex-column align-space-between">
-        <div id="Me3" class="display-flex flex-row align-space-around">
+        <div id="Me3" class="display-flex flex-row align-space-between">
           <div id="text">
-            <p class="hi">Bonjour,</p>
-            <p class="name">je suis DUCATEZ Calvin</p>
+            <p class="hi codedText fromRight">Bonjour,</p>
+            <p class="name codedText fromRight">je suis DUCATEZ Calvin</p>
             <div class="messagedefilant">
               <div data-text="Developpeur Web">
                 <span>Developpeur Web</span>
@@ -70,11 +72,13 @@
               src="img/page.webp"
               alt="maquette d'un site web"
               class="tilt"
+              preload
             />
             <img
               src="img/desc.webp"
               alt="calque de la description de la maquette"
               id="image-container"
+              preload
             />
           </div>
         </div>
@@ -96,21 +100,29 @@
       <article class="Me2">
         <section class="display-flex flex-column align-middle">
           <h2>Qui suis-je ?</h2>
-          <p class="Moi">
+          <p class="Moi arial">
             Développeur web passionné dans la région du Pas-de-Calais à Béthune.
-            J'ai réalisé une formation de "Développeur intégrateur Web" en
-            autodidacte.<br />
-            Ayant terminé et obtenue mon diplôme, je souhaite poursuivre dans ce
-            domaine et évoluer vers Développeur Full Stack.<br /><br />
+            Diplômé d'une formation de "Développeur intégrateur Web" en
+            autodidacte. Je souhaite poursuivre dans ce domaine.<br /><br />
+
+            C'est pourquoi je suis actuellement en formation en tant que
+            développeur full stack avec 3W ACADEMY, que j'ai entamée le 18
+            septembre 2023. Cette formation est une expérience enrichissante qui
+            me permet d'acquérir des compétences avancées en développement web.
+            <br /><br />
+            Mon parcours de formation étant toujours en cours,
             <span class="LightOrange">
-              Je recherche activement un contrat de professionnalisation pour
-              une alternance avec 3W ACADEMY qui à débuté le 18 septembre
-              2023<br />
-              <br />
+              je suis activement à la recherche d'une opportunité en contrat
+              d'alternance au sein d'une entreprise innovante.</span
+            >
+            Mon objectif est de mettre en pratique mes compétences et de
+            continuer d'apprendre dans un environnement professionnel.
+            <br /><br />
+            <span class="LightOrange">
               Contrat d’apprentissage - Rythme : 3 semaines en entreprise / 1
               semaine en école <br />Formation éligible à l’Aide Exceptionnelle
-              de 6000€<br /><br
-            /></span>
+              de 6000€<br /><br />
+            </span>
             vous pouver consulter mes compétences et mes projets ci-dessous,
             sinon téléchargez mon CV !
           </p>
@@ -136,55 +148,71 @@
     <section id="Skills" class="display-flex align-space-between">
       <section class="reveal skillList">
         <h2><i class="fa-solid fa-book-bookmark"></i> Mes compétences</h2>
-        <section>
+        <section class="display-flex flex-column">
           <h3>Frontend</h3>
+          <div class="display-flex flex-wrap">
+            <span class="circleSkills"
+              ><i class="fa-brands fa-html5 IconSkills"></i>HTML5</span
+            >
+            <span class="circleSkills"
+              ><i class="fa-brands fa-css3-alt IconSkills"></i>CSS</span
+            >
+            <span class="circleSkills"
+              ><i class="fa-brands fa-sass IconSkills"></i>SASS</span
+            >
 
-          <p>HTML5</p>
-          <div class="bar display-flex align-space-between">
-            <div id="HTML" class="bar2" style="width: 95%"></div>
-          </div>
-          <p>CSS3 and SASS</p>
-          <div class="bar display-flex align-space-between">
-            <div id="CSS3" class="bar2" style="width: 85%"></div>
-          </div>
-          <p>JAVASCRIPT</p>
-          <div class="bar display-flex align-space-between">
-            <div class="bar2" style="width: 68%"></div>
-          </div>
-          <p>REACT JS</p>
-          <div class="bar display-flex align-space-between">
-            <div class="bar2" style="width: 63%"></div>
+            <span class="circleSkills"
+              ><i class="fa-brands fa-square-js IconSkills"></i>JS</span
+            >
+
+            <span class="circleSkills"
+              ><i class="fa-brands fa-react IconSkills"></i>REACT.JS</span
+            >
           </div>
         </section>
-        <section>
-          <h3>Backend</h3>
-
-          <p>NODE.JS + EXPRESS</p>
-          <div class="bar">
-            <div class="bar2" style="width: 67%"></div>
+        <section class="display-flex flex-column">
+          <h3>Backend & Base de donnée</h3>
+          <div class="display-flex flex-wrap">
+            <span class="circleSkills"
+              ><i class="fa-brands fa-node IconSkills"></i>NODE.JS</span
+            ><span class="circleSkills"
+              ><img
+                src="assets/mongodb.webp"
+                class="IconSkills"
+                width="auto"
+                height="61"
+              />MONGO<br />DB</span
+            >
           </div>
         </section>
-        <section>
-          <h3>Base de donnée</h3>
-
-          <p>MongoDB</p>
-          <div class="bar">
-            <div class="bar2" style="width: 70%"></div>
-          </div>
-        </section>
-        <section>
+        <section class="display-flex flex-column">
           <h3>Divers</h3>
-          <p>Windows</p>
-          <div class="bar">
-            <div class="bar2" style="width: 90%"></div>
-          </div>
-          <p>Ubuntu / Debian</p>
-          <div class="bar">
-            <div class="bar2" style="width: 70%"></div>
-          </div>
-          <p>Adobe Première Pro</p>
-          <div class="bar">
-            <div class="bar2" style="width: 65%"></div>
+          <div class="display-flex flex-wrap">
+            <span class="circleSkills"
+              ><i class="fa-brands fa-windows IconSkills"></i>W10/11</span
+            >
+            <span class="circleSkills"
+              ><i class="fa-brands fa-ubuntu IconSkills"></i>UBUNTU</span
+            >
+            <span class="circleSkills"
+              ><i class="fa-brands fa-figma IconSkills"></i>FIGMA</span
+            >
+            <span class="circleSkills"
+              ><img
+                src="assets/VSC.webp"
+                class="IconSkills"
+                width="auto"
+                height="61"
+              />VSC</span
+            >
+            <span class="circleSkills"
+              ><img
+                src="assets/Adobe_Premiere.webp"
+                class="IconSkills"
+                width="auto"
+                height="61"
+              />Premiere<br />Pro</span
+            >
           </div>
         </section>
       </section>
@@ -454,20 +482,18 @@
     </section>
     <!-- Contact -->
     <section id="Contact">
-      <h2>Me contacter</h2>
-      <p>Vous souhaitez discuter avec moi sur de futur projet ?</p>
-      <p class="text1">
-        Si vous êtes à la recherche d'un développeur web talentueux et passionné
-        pour réaliser votre projet, ne cherchez plus ! Je suis à votre
-        disposition pour discuter de vos besoins en développement web et pour
-        vous offrir des solutions personnalisées, adaptées à vos objectifs et à
-        votre budget.
+      <h2><i class="fa-solid fa-envelope"></i> Me contacter</h2>
+      <p>Vous souhaitez me contacter ?</p>
+      <p class="text1 arial">
+        Vous êtes une entreprise à la recherche d'un développeur full stack en
+        alternance ou si vous avez des informations sur des opportunités
+        correspondant à mon profil, je serais ravi d'en discuter avec vous !
         <br /><br />
-        Avec mes compétences en programmation, mon expérience et mon engagement
-        à fournir un travail de qualité, je suis convaincu que je peux vous
-        aider à créer une présence en ligne efficace et réussie. Contactez-moi
-        dès maintenant pour en discuter davantage !
+        N'hésitez pas à me contacter pour en savoir plus sur mon parcours, mes
+        compétences et comment nous pourrions collaborer pour atteindre nos
+        objectifs de développement web.
       </p>
+
       <div class="email hoverLink display-flex flex-row-reverse">
         <a href="mailto:cducatez.pro@gmail.com" target="_blank">
           <div class="circleContact"></div>

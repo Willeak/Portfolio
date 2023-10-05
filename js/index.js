@@ -105,6 +105,93 @@ function telechargerCv() {
     });
 }
 
+// lien ancre coloré
+setTimeout(function () {
+  // Get all sections that have an ID defined
+  const sections = document.querySelectorAll("section[id]");
+  console.log(sections);
+
+  // Add an event listener listening for scroll
+  window.addEventListener("scroll", navHighlighter);
+
+  function navHighlighter() {
+    // Get current scroll position
+    let scrollY = window.pageYOffset;
+
+    // Now we loop through sections to get height, top, and ID values for each
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 150;
+      const sectionId = current.getAttribute("id");
+      const navLink = document.querySelector(
+        ".navigation a[href='#" + sectionId + "']"
+      );
+
+      if (navLink) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLink.classList.add("active");
+        } else {
+          navLink.classList.remove("active");
+        }
+      }
+    });
+  }
+});
+
+// effect caratere special
+document.addEventListener("DOMContentLoaded", function () {
+  const codedTexts = document.querySelectorAll(".codedText");
+
+  codedTexts.forEach((t) => {
+    const realText = t.textContent;
+    const specialChars = generateRandomChars(realText.length);
+
+    const tl = gsap.timeline();
+    let step = 0;
+
+    tl.fromTo(
+      t,
+      {
+        innerHTML: specialChars,
+        opacity: 1,
+      },
+      {
+        duration: realText.length / 20,
+        ease: "power4.in",
+        delay: 0.1,
+        onUpdate: () => {
+          const p = Math.floor(tl.progress() * realText.length);
+          if (step != p) {
+            step = p;
+            specialChars[step] = randChar();
+            const displayText = specialChars.join("");
+            t.innerHTML = realText.substring(0, p) + displayText.substring(p);
+          }
+        },
+        onComplete: () => {
+          t.innerHTML = realText;
+        },
+      }
+    );
+  });
+});
+
+function generateRandomChars(length) {
+  const chars = [];
+  for (let i = 0; i < length; i++) {
+    chars.push(randChar());
+  }
+  return chars;
+}
+
+function randChar() {
+  let c =
+    "!#$%&@¢£¤¥©АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя你好";
+
+  c = c[Math.floor(Math.random() * c.length)];
+  return Math.random() > 0.5 ? c : c.toUpperCase();
+}
+
 // const Name = document.getElementById("Name");
 // const firstName = document.getElementById("firstName");
 // const email = document.getElementById("email");

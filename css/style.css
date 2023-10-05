@@ -29,6 +29,15 @@
 }
 .LeagueSpartan {
   font-family: "LeagueSpartan";
+  font-weight: 200;
+  font-style: normal;
+}
+
+.arial {
+  font-family: "arial";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .Lastica {
@@ -128,9 +137,11 @@ nav a {
   margin-top: 230px;
   margin-right: 20px;
   width: 100%;
-  max-width: 798px;
+  max-width: 716px;
   height: 100%;
-  max-height: 780px;
+  max-height: 700px;
+  margin-right: 120px;
+  z-index: -1000;
 }
 #Me #Me2 #Me3 #Model img {
   -o-object-fit: contain;
@@ -196,23 +207,6 @@ nav a {
   display: none;
 }
 
-.bar {
-  width: 100%;
-  max-width: 600px;
-  height: 16px;
-  background-color: dimgray;
-  border-radius: 20px;
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.bar2 {
-  position: relative;
-  height: 16px;
-  background-color: var(--secondary-color);
-  border-radius: 20px;
-}
-
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -226,11 +220,14 @@ nav a {
 }
 
 .skillList {
-  width: 36%;
+  width: 100%;
 }
 .skillList h2 {
   width: 360px;
   word-wrap: break-word;
+}
+.skillList section {
+  width: 100%;
 }
 
 .iconeSEO {
@@ -265,6 +262,7 @@ nav a {
   padding-top: 100px;
   font-size: 60px;
   min-width: 1px;
+  width: 384;
 }
 
 .name {
@@ -295,7 +293,7 @@ nav a {
   margin-top: 80px;
   margin-left: 7%;
   min-width: 380px;
-  width: 30%;
+  width: 100%;
 }
 
 .descME:hover {
@@ -405,6 +403,9 @@ nav a {
 }
 .Card:hover .description h4 {
   animation: mooveTitle 1s forwards;
+}
+.Card:hover .description div a {
+  color: var(--primary-color);
 }
 .Card:hover .description P {
   animation: mooveDesc 1s forwards;
@@ -596,8 +597,12 @@ footer .hoverLink:hover .icon {
   #Me3 #Model {
     position: absolute;
     opacity: 0.3;
-    width: 80%;
+    width: 80% !important;
     margin-top: 0px !important;
+    margin-right: 0px !important;
+  }
+  .skillList {
+    width: 70%;
   }
   .text1 {
     width: 80%;
@@ -701,6 +706,9 @@ footer .hoverLink:hover .icon {
   }
   #Me3 #text .name {
     width: 300px !important;
+  }
+  #Me3 #Model {
+    width: 100% !important;
   }
   #Me #Me2 #Me3 #Model img {
     min-width: 200px;
